@@ -1,0 +1,4 @@
+build:debug --experimental_skylark_debug 
+build:debug --experimental_skylark_debug_server_port=7300
+build:debug --experimental_skylark_debug_verbose_logging=true
+build:debug --nouse_action_cache

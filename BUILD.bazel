@@ -1,0 +1,19 @@
+print("hello")
+
+filegroup(
+    name = "all_files",
+    srcs = [
+        "BUILD.bazel",
+        "WORKSPACE",
+    ],
+)
+
+genrule(
+    name = "requirements_in",
+    outs = ["requirements.in"],
+    cmd = """
+    cat << EOF > $@
+iteration 19
+EOF
+    """,
+)
